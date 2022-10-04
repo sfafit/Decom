@@ -1,0 +1,2364 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20221004131252
+Username: MSEARL-L\scrockett
+RunAs User: MSEARL-L\scrockett
+Configuration Name: 
+Machine: MSEARL-L (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 15584
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Temp\Log\Decom\Decom-221004-1312.txt
+
+
+    Hive: HKEY_LOCAL_MACHINE\Software
+
+
+Name                           Property
+----                           --------
+Ninja
+
+
+    Hive: HKEY_LOCAL_MACHINE\Software\Ninja
+
+
+Name                           Property
+----                           --------
+Decommission
+PS>TerminatingError(Get-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Property Script-Stage does not exist at path HKEY_LOCAL_MACHINE\Software\Ninja\Decommission."
+Script stage unset, creating script stage
+Contenuing with Stage value 0
+Get-CimInstance : Invalid class 
+At line:27 char:25
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], 
+CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041010,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+Get-CimInstance : Invalid class
+At line:27 char:25
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], CimExc
+   eption
+    + FullyQualifiedErrorId : HRESULT 0x80041010,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+
+Cannot convert null to type "System.DateTime".
+At line:27 char:1
++ $warranty = [datetime] (Get-CimInstance -Namespace root/Lenovo -Class ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+Cannot convert null to type "System.DateTime".
+At line:27 char:1
++ $warranty = [datetime] (Get-CimInstance -Namespace root/Lenovo -Class ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+
+Transcript started, output file is C:\Temp\Lenovo\10042022-1312.log
+Calling API
+Downloading LenovoVantage
+
+type                : file
+id                  : 1027721911808
+file_version        : @{type=file_version; id=1113505210208; sha1=a3d498c63cf05bff1ce86acb1c9291979d46077e}
+sequence_id         : 1
+etag                : 1
+sha1                : a3d498c63cf05bff1ce86acb1c9291979d46077e
+name                : LenovoCommercialVantage-SFAF.zip
+description         :
+size                : 376195306
+path_collection     : @{total_count=4; entries=System.Object[]}
+created_at          : 2022-09-29T16:19:00-07:00
+modified_at         : 2022-09-29T16:19:00-07:00
+trashed_at          :
+purged_at           :
+content_created_at  : 2022-09-20T17:21:00-07:00
+content_modified_at : 2022-09-20T17:21:00-07:00
+created_by          : @{type=user; id=20065812446; name=Gabriell Valentine; login=gvalentine@sfaf.org}
+modified_by         : @{type=user; id=20065812446; name=Gabriell Valentine; login=gvalentine@sfaf.org}
+owned_by            : @{type=user; id=9418247245; name=IT Support; login=itsupport@sfaf.org}
+shared_link         : @{url=https://app.box.com/s/dv93tmnn612qnhxvli1vjp89sk66qogy;
+                      download_url=https://app.box.com/shared/static/dv93tmnn612qnhxvli1vjp89sk66qogy.zip;
+                      vanity_url=; vanity_name=; effective_access=open; effective_permission=can_download;
+                      is_password_enabled=False; unshared_at=; download_count=5; preview_count=1; access=open;
+                      permissions=}
+parent              : @{type=folder; id=173806918296; sequence_id=0; etag=0; name=Lenovo}
+item_status         : active
+
+TOTAL SIZE =
+376195306
+cd : Cannot find path 'C:\Temp\Lenovo\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFAF' because it does not 
+exist.
+At line:102 char:1
++ cd "$tempdir\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFA ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Temp\Lenovo\...ialVantage-SFAF:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path 'C:\Temp\Lenovo\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFAF' because it does not exist.
+At line:102 char:1
++ cd "$tempdir\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFA ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Temp\Lenovo\...ialVantage-SFAF:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+Running Bat - Starting
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: The system cannot find the file specified."
+Start-Process : This command cannot be run due to the error: The system cannot find the file specified.
+At line:105 char:12
++ $install = Start-Process $batfile -Verb RunAs -PassThru
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: The system cannot find the file specified.
+At line:105 char:12
++ $install = Start-Process $batfile -Verb RunAs -PassThru
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+>> TerminatingError(Wait-Process): "Cannot validate argument on parameter 'Id'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Wait-Process : Cannot validate argument on parameter 'Id'. The argument is null or empty. Provide an argument that is 
+not null or empty, and then try the command again.
+At line:106 char:18
++ Wait-Process -id $install.id
++                  ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Wait-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.WaitProcessCommand
+Wait-Process : Cannot validate argument on parameter 'Id'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again.
+At line:106 char:18
++ Wait-Process -id $install.id
++                  ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Wait-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.WaitProcessCommand
+
+Running Bat - Complete
+Cleaning up
+Install finished. Something Went wrong.
+Transcript stopped, output file is C:\Temp\Lenovo\10042022-1312.log
+Gathering and uploading node metadata
+Forcing web requests to allow TLS v1.2 (Required for requests to Chocolatey.org)
+Getting latest version of the Chocolatey package for download.
+Not using proxy.
+Getting Chocolatey from https://community.chocolatey.org/api/v2/package/chocolatey/1.1.0.
+Downloading https://community.chocolatey.org/api/v2/package/chocolatey/1.1.0 to C:\Users\SCROCK~1\AppData\Local\Temp\chocolatey\chocoInstall\chocolatey.zip
+Not using proxy.
+Extracting C:\Users\SCROCK~1\AppData\Local\Temp\chocolatey\chocoInstall\chocolatey.zip to C:\Users\SCROCK~1\AppData\Local\Temp\chocolatey\chocoInstall
+Installing Chocolatey on the local machine
+Creating ChocolateyInstall as an environment variable (targeting 'Machine') 
+  Setting ChocolateyInstall to 'C:\ProgramData\chocolatey'
+WARNING: It's very likely you will need to close and reopen your shell 
+  before you can use choco.
+Restricting write permissions to Administrators
+We are setting up the Chocolatey package repository.
+The packages themselves go to 'C:\ProgramData\chocolatey\lib'
+  (i.e. C:\ProgramData\chocolatey\lib\yourPackageName).
+A shim file for the command line goes to 'C:\ProgramData\chocolatey\bin'
+  and points to an executable in 'C:\ProgramData\chocolatey\lib\yourPackageName'.
+
+Creating Chocolatey folders if they do not already exist.
+WARNING: You can safely ignore errors related to missing log files when 
+  upgrading from a version of Chocolatey less than 0.9.9. 
+  'Batch file could not be found' is also safe to ignore. 
+  'The system cannot find the file specified' - also safe.
+chocolatey.nupkg file not installed in lib.
+ Attempting to locate it from bootstrapper.
+PATH environment variable does not have C:\ProgramData\chocolatey\bin in it. Adding...
+WARNING: Not setting tab completion: Profile file does not exist at 'C:\Users\scrockett\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'.
+Chocolatey (choco.exe) is now ready.
+You can call choco from anywhere, command line or powershell by typing choco.
+Run choco /? for a list of functions.
+You may need to shut down and restart powershell and/or consoles
+ first prior to using choco.
+Ensuring Chocolatey commands are on the path
+Ensuring chocolatey.nupkg is in the lib folder
+
+FastPackageReference : https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swidtag
+ProviderName         : Bootstrap
+Source               : https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swidtag
+Status               : Installed
+SearchKey            : https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swidtag
+FullPath             :
+PackageFilename      : Microsoft.PackageManagement.NuGetProvider.dll
+FromTrustedSource    : False
+Summary              : NuGet provider for the OneGet meta-package manager
+SwidTags             : {nuget}
+CanonicalId          : bootstrap:nuget/2.8.5.208#https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swidtag
+Metadata             : {summary,providerName,providerVersion,summary}
+SwidTagText          : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                       <SoftwareIdentity
+                         name="nuget"
+                         version="2.8.5.208"
+                         versionScheme="multipartnumeric" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                         <Meta
+                           summary="NuGet provider for the OneGet meta-package manager" />
+                         <Meta
+                           providerName="nuget"
+                           providerVersion="2.8.5.208"
+                           summary="NuGet provider for the OneGet meta-package manager" />
+                         <Link
+                           href="https://onegetcdn.azureedge.net/providers/Microsoft.PackageManagement.NuGetProvider-2.8.5.208.dll"
+                           rel="installationmedia"
+                           type="application/octet-stream"
+                           media="(OS:windows)" />
+                       </SoftwareIdentity>
+Dependencies         : {}
+IsCorpus             :
+Name                 : nuget
+Version              : 2.8.5.208
+VersionScheme        : multipartnumeric
+TagVersion           :
+TagId                :
+IsPatch              :
+IsSupplemental       :
+AppliesToMedia       :
+Meta                 : {{summary}, {providerName,providerVersion,summary}}
+Links                : {installationmedia:https://onegetcdn.azureedge.net/providers/Microsoft.PackageManagement.NuGetProvider-2.8.5.208.dll}
+Entities             : {}
+Payload              :
+Evidence             :
+Culture              :
+Attributes           : {name,version,versionScheme}
+
+WARNING: git command could not be found. Please create an alias or add it to your PATH.
+
+PSPath            : Microsoft.PowerShell.Core\FileSystem::C:\temp\Git
+PSParentPath      : Microsoft.PowerShell.Core\FileSystem::C:\temp
+PSChildName       : Git
+PSDrive           : C
+PSProvider        : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer     : True
+Name              : Git
+FullName          : C:\temp\Git
+Parent            : temp
+Exists            : True
+Root              : C:\
+Extension         :
+CreationTime      : 10/4/2022 1:45:08 PM
+CreationTimeUtc   : 10/4/2022 8:45:08 PM
+LastAccessTime    : 10/4/2022 1:45:08 PM
+LastAccessTimeUtc : 10/4/2022 8:45:08 PM
+LastWriteTime     : 10/4/2022 1:45:08 PM
+LastWriteTimeUtc  : 10/4/2022 8:45:08 PM
+Attributes        : Directory
+Mode              : d-----
+BaseName          : Git
+Target            : {}
+LinkType          :
+
+Cloning into 'Decom'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 17 (delta 2), reused 16 (delta 1), pack-reused 0
+Receiving objects: 100% (17/17), 10.06 KiB | 5.03 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+Get-CimInstance : Invalid class 
+At line:167 char:33
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], 
+CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041010,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+Get-CimInstance : Invalid class
+At line:167 char:33
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80041010,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+
+Cannot convert null to type "System.DateTime".
+At line:167 char:9
++         $warranty = [datetime] (Get-CimInstance -Namespace root/Lenov ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+Cannot convert null to type "System.DateTime".
+At line:167 char:9
++         $warranty = [datetime] (Get-CimInstance -Namespace root/Lenov ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+
+Exception calling "ParseExact" with "3" argument(s): "String was not recognized as a valid DateTime."
+At line:168 char:9
++         [datetime]::parseexact($warranty, 'dd/MM/yyyy hh:mm:ss', $nul ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : FormatException
+Exception calling "ParseExact" with "3" argument(s): "String was not recognized as a valid DateTime."
+At line:168 char:9
++         [datetime]::parseexact($warranty, 'dd/MM/yyyy hh:mm:ss', $nul ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : FormatException
+
+Custom-Keys
+A1772,PC11CC0P,MSEARL-L,ThinkPad T480s,,Intel64 Family 6 Model 142 Stepping 10,2022-10-04 13:45,:achristianson:ewright:jdarsey:mmaurice:Public:rearl:scrockett:spatel:yyosief:
+PS>TerminatingError(New-Item): "The given path's format is not supported."
+New-Item : The given path's format is not supported.
+At line:207 char:28
++ ... -eq $False){New-Item -Path . -Name $ConfigPath -ItemType "file" -Valu ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [New-Item], NotSupportedException
+    + FullyQualifiedErrorId : System.NotSupportedException,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : The given path's format is not supported.
+At line:207 char:28
++ ... -eq $False){New-Item -Path . -Name $ConfigPath -ItemType "file" -Valu ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [New-Item], NotSupportedException
+    + FullyQualifiedErrorId : System.NotSupportedException,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-content : Cannot find path 'C:\Users\scrockett\.gitconfig' because it does not exist.
+At line:208 char:19
++     $ConfigFile = get-content -Path $ConfigPath
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\scrockett\.gitconfig:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+get-content : Cannot find path 'C:\Users\scrockett\.gitconfig' because it does not exist.
+At line:208 char:19
++     $ConfigFile = get-content -Path $ConfigPath
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\scrockett\.gitconfig:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+
+[main f9747f8] Adding MSEARL-L to tracker
+ Committer: unknown <scrockett@MSEARL-L.sfaf.int>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 465 bytes | 465.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sfafit/Decom.git
+   43fc5a9..f9747f8  main -> main
+branch 'main' set up to track 'origin/main'.
+Backing up User Data
+new-psdrive : The specified drive root "\\archive\SHARED\NinjaRMM\User-Backups" either does not exist, or it is not a 
+folder.
+At line:237 char:5
++     new-psdrive -name "R" -psprovider filesystem -Root "\\archive\SHA ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (R:PSDriveInfo) [New-PSDrive], IOException
+    + FullyQualifiedErrorId : DriveRootError,Microsoft.PowerShell.Commands.NewPSDriveCommand
+new-psdrive : The specified drive root "\\archive\SHARED\NinjaRMM\User-Backups" either does not exist, or it is not a folder.
+At line:237 char:5
++     new-psdrive -name "R" -psprovider filesystem -Root "\\archive\SHA ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (R:PSDriveInfo) [New-PSDrive], IOException
+    + FullyQualifiedErrorId : DriveRootError,Microsoft.PowerShell.Commands.NewPSDriveCommand
+
+cd : Cannot find drive. A drive with the name 'R' does not exist.
+At line:238 char:5
++     cd R:
++     ~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Set-Location], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find drive. A drive with the name 'R' does not exist.
+At line:238 char:5
++     cd R:
++     ~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Set-Location], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:240 char:17
++     $SUsers = @(get-childitem "R:").name
++                 ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:240 char:17
++     $SUsers = @(get-childitem "R:").name
++                 ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:244 char:39
++ ... s -notcontains $U ){New-item -path "R:" -name $U -itemtype directory}
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+get-childitem : Cannot find drive. A drive with the name 'R' does not exist.
+At line:245 char:20
++         $Check = @(get-childitem "R:\$U").name
++                    ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Get-ChildItem], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:247 char:9
++         New-item -path "R:\$U" -name $C -itemtype directory
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [New-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find drive. A drive with the name 'R' does not exist.
+At line:249 char:13
++             Copy-Item -Path "C:\users\$U\$D*" -Destination "R:\$U\$C\ ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (R:String) [Copy-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{6AD2231F-FF48-4D59-AC26-405AFAE23DB7}
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *desktop central*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {ManageEngine Desktop Central - Agent}
+CanonicalId                : programs:ManageEngine Desktop Central - Agent/10.0.479.W
+Metadata                   : {Contact,DisplayVersion,InstallDate,InstallSource,ModifyPath,Publisher,EstimatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Languag
+                             e,DisplayName,NoModify,NoRemove}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="ManageEngine Desktop Central - Agent"
+                               version="10.0.479.W"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 Contact="desktopcentral-support@manageengine.com"
+                                 DisplayVersion="10.0.479.W"
+                                 InstallDate="20200310"
+                                 InstallSource="C:\WINDOWS\TEMP\DesktopcentralAgent\"
+                                 ModifyPath="MsiExec.exe /I{6AD2231F-FF48-4D59-AC26-405AFAE23DB7}"
+                                 Publisher="ZohoCorp"
+                                 EstimatedSize="41379"
+                                 UninstallString="MsiExec.exe /I{6AD2231F-FF48-4D59-AC26-405AFAE23DB7}"
+                                 VersionMajor="10"
+                                 VersionMinor="0"
+                                 WindowsInstaller="1"
+                                 Version="167772639"
+                                 Language="1033"
+                                 DisplayName="ManageEngine Desktop Central - Agent"
+                                 NoModify="0"
+                                 NoRemove="0" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : ManageEngine Desktop Central - Agent
+Version                    : 10.0.479.W
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{Contact,DisplayVersion,InstallDate,InstallSource,ModifyPath,Publisher,EstimatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Langua
+                             ge,DisplayName,NoModify,NoRemove}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *desktop central*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{f0adb953-fd68-4640-bec4-f094467d26f3}
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *crowdstrike*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {CrowdStrike Windows Sensor}
+CanonicalId                : programs:CrowdStrike Windows Sensor/6.44.15806.0
+Metadata                   : {BundleCachePath,BundleUpgradeCode,BundleAddonCode,BundleDetectCode,BundlePatchCode,BundleVersion,VersionMajor,VersionMinor,BundleProviderKey,EngineVersion,Dis
+                             playIcon,DisplayName,DisplayVersion,Publisher,ModifyPath,NoElevateOnModify,QuietUninstallString,UninstallString,EstimatedSize,Resume,Installed}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="CrowdStrike Windows Sensor"
+                               version="6.44.15806.0"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 BundleCachePath="C:\ProgramData\Package Cache\{f0adb953-fd68-4640-bec4-f094467d26f3}\WindowsSensor.x64.exe"
+                                 BundleUpgradeCode="System.String[]"
+                                 BundleAddonCode="System.String[]"
+                                 BundleDetectCode="System.String[]"
+                                 BundlePatchCode="System.String[]"
+                                 BundleVersion="6.44.15806.0"
+                                 VersionMajor="6"
+                                 VersionMinor="44"
+                                 BundleProviderKey="{f0adb953-fd68-4640-bec4-f094467d26f3}"
+                                 EngineVersion="3.14.0.6315"
+                                 DisplayIcon="C:\ProgramData\Package Cache\{f0adb953-fd68-4640-bec4-f094467d26f3}\WindowsSensor.x64.exe,0"
+                                 DisplayName="CrowdStrike Windows Sensor"
+                                 DisplayVersion="6.44.15806.0"
+                                 Publisher="CrowdStrike, Inc."
+                                 ModifyPath="&quot;C:\ProgramData\Package Cache\{f0adb953-fd68-4640-bec4-f094467d26f3}\WindowsSensor.x64.exe&quot; /modify"
+                                 NoElevateOnModify="1"
+                                 QuietUninstallString="&quot;C:\ProgramData\Package Cache\{f0adb953-fd68-4640-bec4-f094467d26f3}\WindowsSensor.x64.exe&quot; /uninstall /quiet"
+                                 UninstallString="&quot;C:\ProgramData\Package Cache\{f0adb953-fd68-4640-bec4-f094467d26f3}\WindowsSensor.x64.exe&quot;  /uninstall"
+                                 EstimatedSize="95101"
+                                 Resume="3"
+                                 Installed="1" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : CrowdStrike Windows Sensor
+Version                    : 6.44.15806.0
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{BundleCachePath,BundleUpgradeCode,BundleAddonCode,BundleDetectCode,BundlePatchCode,BundleVersion,VersionMajor,VersionMinor,BundleProviderKey,EngineVersion,Di
+                             splayIcon,DisplayName,DisplayVersion,Publisher,ModifyPath,NoElevateOnModify,QuietUninstallString,UninstallString,EstimatedSize,Resume,Installed}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *crowdstrike*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8EBAB94E-6B3C-4EF4-ABD5-A15C39E53F14}
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *umbrella*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Umbrella Roaming Client}
+CanonicalId                : programs:Umbrella Roaming Client/3.0.279.0
+Metadata                   : {DisplayVersion,InstallDate,InstallSource,ModifyPath,NoRepair,Publisher,EstimatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Langua
+                             ge,DisplayName}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Umbrella Roaming Client"
+                               version="3.0.279.0"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 DisplayVersion="3.0.279.0"
+                                 InstallDate="20220510"
+                                 InstallSource="C:\ProgramData\OpenDNS\ERC\Upgrades\"
+                                 ModifyPath="MsiExec.exe /I{8EBAB94E-6B3C-4EF4-ABD5-A15C39E53F14}"
+                                 NoRepair="1"
+                                 Publisher="OpenDNS"
+                                 EstimatedSize="4737"
+                                 UninstallString="MsiExec.exe /I{8EBAB94E-6B3C-4EF4-ABD5-A15C39E53F14}"
+                                 VersionMajor="3"
+                                 VersionMinor="0"
+                                 WindowsInstaller="1"
+                                 Version="50331927"
+                                 Language="1033"
+                                 DisplayName="Umbrella Roaming Client" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Umbrella Roaming Client
+Version                    : 3.0.279.0
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{DisplayVersion,InstallDate,InstallSource,ModifyPath,NoRepair,Publisher,EstimatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Langu
+                             age,DisplayName}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *umbrella*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm64\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Visual Studio 2010 Tools for Office Runtime (x64)
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *office*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Microsoft Visual Studio 2010 Tools for Office Runtime (x64)}
+CanonicalId                : programs:Microsoft Visual Studio 2010 Tools for Office Runtime (x64)/10.0.50903
+Metadata                   : {DisplayIcon,DisplayName,DisplayVersion,HelpLink,InstallLocation,ModifyPath,NoModify,Publisher,UninstallPath,UninstallString,URLUpdateInfo,VersionMajor,sEstima
+                             tedSize2,EstimatedSize}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Microsoft Visual Studio 2010 Tools for Office Runtime (x64)"
+                               version="10.0.50903"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 DisplayIcon="msiexec.exe"
+                                 DisplayName="Microsoft Visual Studio 2010 Tools for Office Runtime (x64)"
+                                 DisplayVersion="10.0.50903"
+                                 HelpLink="http://go.microsoft.com/fwlink/?LinkId=133405"
+                                 InstallLocation="c:\Program Files\Common Files\Microsoft Shared\VSTO\10.0\"
+                                 ModifyPath="MsiExec.exe /I {9495AEB4-AB97-39DE-8C42-806EEF75ECA7}"
+                                 NoModify="0"
+                                 Publisher="Microsoft Corporation"
+                                 UninstallPath="c:\Program Files\Common Files\Microsoft Shared\VSTO\10.0\Microsoft Visual Studio 2010 Tools for Office Runtime (x64)\install.exe"
+                                 UninstallString="c:\Program Files\Common Files\Microsoft Shared\VSTO\10.0\Microsoft Visual Studio 2010 Tools for Office Runtime (x64)\install.exe"
+                                 URLUpdateInfo="http://go.microsoft.com/fwlink/?LinkId=133408"
+                                 VersionMajor="4"
+                                 sEstimatedSize2="0"
+                                 EstimatedSize="17403" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Microsoft Visual Studio 2010 Tools for Office Runtime (x64)
+Version                    : 10.0.50903
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{DisplayIcon,DisplayName,DisplayVersion,HelpLink,InstallLocation,ModifyPath,NoModify,Publisher,UninstallPath,UninstallString,URLUpdateInfo,VersionMajor,sEstim
+                             atedSize2,EstimatedSize}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm64\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\ProPlus2019Volume - en-us
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *office*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Microsoft Office Professional Plus 2019 - en-us}
+CanonicalId                : programs:Microsoft Office Professional Plus 2019 - en-us/16.0.10390.20024
+Metadata                   : {UninstallString,ModifyPath,NoRepair,NoRemove,NoModify,DisplayIcon,DisplayName,DisplayVersion,Publisher,InstallLocation,ClickToRunComponent}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Microsoft Office Professional Plus 2019 - en-us"
+                               version="16.0.10390.20024"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 UninstallString="&quot;C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe&quot; scenario=install scenariosubtype=ARP
+                             sourcetype=None productstoremove=ProPlus2019Volume.16_en-us_x-none culture=en-us version.16=16.0"
+                                 ModifyPath="&quot;C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe&quot; scenario=repair platform=x64 culture=en-us"
+                                 NoRepair="0"
+                                 NoRemove="0"
+                                 NoModify="0"
+                                 DisplayIcon="C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe"
+                                 DisplayName="Microsoft Office Professional Plus 2019 - en-us"
+                                 DisplayVersion="16.0.10390.20024"
+                                 Publisher="Microsoft Corporation"
+                                 InstallLocation="C:\Program Files\Microsoft Office"
+                                 ClickToRunComponent="1" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Microsoft Office Professional Plus 2019 - en-us
+Version                    : 16.0.10390.20024
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{UninstallString,ModifyPath,NoRepair,NoRemove,NoModify,DisplayIcon,DisplayName,DisplayVersion,Publisher,InstallLocation,ClickToRunComponent}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Visual Studio Tools for the Office system 3.0 Runtime
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *office*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Visual Studio Tools for the Office system 3.0 Runtime}
+CanonicalId                : programs:Visual Studio Tools for the Office system 3.0 Runtime
+Metadata                   : {DisplayIcon,DisplayName,UninstallString,VersionMinor,VersionMajor,Publisher,InstallLocation,UninstallPath,URLUpdateInfo,HelpLink,sEstimatedSize2,EstimatedSize
+                             }
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Visual Studio Tools for the Office system 3.0 Runtime"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 DisplayIcon="C:\Windows\SysWOW64\msiexec.exe"
+                                 DisplayName="Visual Studio Tools for the Office system 3.0 Runtime"
+                                 UninstallString="C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\9.0\Visual Studio Tools for the Office system 3.0 Runtime\install.exe"
+                                 VersionMinor="0"
+                                 VersionMajor="2"
+                                 Publisher="Microsoft Corporation"
+                                 InstallLocation="C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\9.0\"
+                                 UninstallPath="C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\9.0\Visual Studio Tools for the Office system 3.0 Runtime\install.exe"
+                                 URLUpdateInfo="http://go.microsoft.com/fwlink/?LinkId=96789"
+                                 HelpLink="http://go.microsoft.com/fwlink/?LinkId=96782"
+                                 sEstimatedSize2="0"
+                                 EstimatedSize="20761" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Visual Studio Tools for the Office system 3.0 Runtime
+Version                    :
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{DisplayIcon,DisplayName,UninstallString,VersionMinor,VersionMajor,Publisher,InstallLocation,UninstallPath,URLUpdateInfo,HelpLink,sEstimatedSize2,EstimatedSiz
+                             e}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,versionScheme}
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8FB53850-246A-3507-8ADE-0060093FFEA6}.KB949258
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *office*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    : This service pack is for Visual Studio Tools for the Office system 3.0 Runtime.
+                             If you later install a more recent service pack, this service pack will be uninstalled automatically.
+                             For more information, visit http://support.microsoft.com/kb/949258.
+SwidTags                   : {Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)}
+CanonicalId                : programs:Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)/1
+Metadata                   : {summary,ReleaseType,Comments,DisplayName,DisplayVersion,HelpLink,NoModify,NoRepair,ParentDisplayName,ParentKeyName,Publisher,RegistryLocation,UninstallString,
+                             URLInfoAbout}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)"
+                               version="1"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 summary="This service pack is for Visual Studio Tools for the Office system 3.0 Runtime.&#xD;&#xA;If you later install a more recent service pack, this
+                             service pack will be uninstalled automatically.&#xD;&#xA;For more information, visit http://support.microsoft.com/kb/949258."
+                                 ReleaseType="Service Pack"
+                                 Comments="This service pack is for Visual Studio Tools for the Office system 3.0 Runtime.&#xD;&#xA;If you later install a more recent service pack, this
+                             service pack will be uninstalled automatically.&#xD;&#xA;For more information, visit http://support.microsoft.com/kb/949258."
+                                 DisplayName="Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)"
+                                 DisplayVersion="1"
+                                 HelpLink="http://support.microsoft.com/kb/949258"
+                                 NoModify="1"
+                                 NoRepair="1"
+                                 ParentDisplayName="Visual Studio Tools for the Office system 3.0 Runtime"
+                                 ParentKeyName="Visual Studio Tools for the Office system 3.0 Runtime"
+                                 Publisher="Microsoft Corporation"
+                                 RegistryLocation="HKEY_LOCAL_MACHINE\Software\Microsoft\Updates\Visual Studio Tools for the Office system 3.0 Runtime\SP1\KB949258"
+                                 UninstallString="C:\Windows\SysWOW64\msiexec.exe /package {8FB53850-246A-3507-8ADE-0060093FFEA6} /uninstall {1AF8622B-42B6-472C-A634-487025BD7B38} /qb+
+                             REBOOTPROMPT=&quot;&quot;"
+                                 URLInfoAbout="http://support.microsoft.com" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)
+Version                    : 1
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{summary,ReleaseType,Comments,DisplayName,DisplayVersion,HelpLink,NoModify,NoRepair,ParentDisplayName,ParentKeyName,Publisher,RegistryLocation,UninstallString
+                             ,URLInfoAbout}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *office*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4172C08E-FA2A-49F5-A2DA-66156F14300E}
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *freshservice*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    : It is used by Freshservice for discovery
+SwidTags                   : {Freshservice Discovery Agent}
+CanonicalId                : programs:Freshservice Discovery Agent/2.15.0
+Metadata                   : {summary,Comments,Contact,DisplayVersion,InstallDate,InstallSource,ModifyPath,Publisher,EstimatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstalle
+                             r,Version,Language,DisplayName}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Freshservice Discovery Agent"
+                               version="2.15.0"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 summary="It is used by Freshservice for discovery"
+                                 Comments="It is used by Freshservice for discovery"
+                                 Contact="Freshdesk"
+                                 DisplayVersion="2.15.0"
+                                 InstallDate="20221004"
+                                 InstallSource="C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\ScheduledTasks\"
+                                 ModifyPath="MsiExec.exe /I{4172C08E-FA2A-49F5-A2DA-66156F14300E}"
+                                 Publisher="Freshdesk"
+                                 EstimatedSize="4006"
+                                 UninstallString="MsiExec.exe /I{4172C08E-FA2A-49F5-A2DA-66156F14300E}"
+                                 VersionMajor="2"
+                                 VersionMinor="15"
+                                 WindowsInstaller="1"
+                                 Version="34537472"
+                                 Language="1033"
+                                 DisplayName="Freshservice Discovery Agent" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Freshservice Discovery Agent
+Version                    : 2.15.0
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{summary,Comments,Contact,DisplayVersion,InstallDate,InstallSource,ModifyPath,Publisher,EstimatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstall
+                             er,Version,Language,DisplayName}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *freshservice*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+get-package : No package found for '*365*'.
+At line:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+get-package : No package found for '*365*'.
+At line:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+
+Uninstalling *365*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+get-package : No package found for '*phantompdf*'.
+At line:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+get-package : No package found for '*phantompdf*'.
+At line:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+
+Uninstalling *phantompdf*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Foxit Reader_is1
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *foxit*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Foxit Reader}
+CanonicalId                : programs:Foxit Reader/9.4.1.16828
+Metadata                   : {InnoSetup-SetupVersion,InnoSetup-AppPath,InstallLocation,InnoSetup-IconGroup,InnoSetup-User,InnoSetup-SetupType,InnoSetup-SelectedComponents,InnoSetup-Deselec
+                             tedComponents,InnoSetup-SelectedTasks,InnoSetup-DeselectedTasks,InnoSetup-Language,DisplayName,DisplayIcon,UninstallString,QuietUninstallString,DisplayVersion,
+                             Publisher,URLInfoAbout,HelpLink,InstallDate,MajorVersion,MinorVersion,VersionMajor,VersionMinor,EstimatedSize}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Foxit Reader"
+                               version="9.4.1.16828"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 InnoSetup-SetupVersion="5.5.9 (u)"
+                                 InnoSetup-AppPath="C:\Program Files (x86)\Foxit Software\Foxit Reader"
+                                 InstallLocation="C:\Program Files (x86)\Foxit Software\Foxit Reader\"
+                                 InnoSetup-IconGroup="Foxit Reader"
+                                 InnoSetup-User="ewright"
+                                 InnoSetup-SetupType="full"
+                                 InnoSetup-SelectedComponents="pdfviewer,ffse,connectedpdf,installprint,installprint\converttopdf,installprint\wordaddin,installprint\pptaddin,ffaddin,ffspe
+                             llcheck"
+                                 InnoSetup-DeselectedComponents="installprint\exceladdin"
+                                 InnoSetup-SelectedTasks="desktopicon,startmenufolder,setdefaultreader,displayinbrowser"
+                                 InnoSetup-DeselectedTasks="quicklaunchicon,setcpdf,setdefaultcreator"
+                                 InnoSetup-Language="en"
+                                 DisplayName="Foxit Reader"
+                                 DisplayIcon="C:\Program Files (x86)\Foxit Software\Foxit Reader\FoxitReader.exe"
+                                 UninstallString="&quot;C:\Program Files (x86)\Foxit Software\Foxit Reader\unins000.exe&quot;"
+                                 QuietUninstallString="&quot;C:\Program Files (x86)\Foxit Software\Foxit Reader\unins000.exe&quot; /SILENT"
+                                 DisplayVersion="9.4.1.16828"
+                                 Publisher="Foxit Software Inc."
+                                 URLInfoAbout="http://www.foxitsoftware.com/"
+                                 HelpLink="http://www.foxitsoftware.com/support/"
+                                 InstallDate="20190415"
+                                 MajorVersion="9"
+                                 MinorVersion="4"
+                                 VersionMajor="9"
+                                 VersionMinor="4"
+                                 EstimatedSize="258785" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Foxit Reader
+Version                    : 9.4.1.16828
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{InnoSetup-SetupVersion,InnoSetup-AppPath,InstallLocation,InnoSetup-IconGroup,InnoSetup-User,InnoSetup-SetupType,InnoSetup-SelectedComponents,InnoSetup-Desele
+                             ctedComponents,InnoSetup-SelectedTasks,InnoSetup-DeselectedTasks,InnoSetup-Language,DisplayName,DisplayIcon,UninstallString,QuietUninstallString,DisplayVersion
+                             ,Publisher,URLInfoAbout,HelpLink,InstallDate,MajorVersion,MinorVersion,VersionMajor,VersionMinor,EstimatedSize}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *foxit*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At line:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+
+Prepping for Unjoin
+Post removal remoting enabled
+Removing bitlocker
+
+ComputerName         : MSEARL-L
+MountPoint           : C:
+EncryptionMethod     : XtsAes128
+AutoUnlockEnabled    :
+AutoUnlockKeyStored  : False
+MetadataVersion      : 2
+VolumeStatus         : DecryptionInProgress
+ProtectionStatus     : Off
+LockStatus           : Unlocked
+EncryptionPercentage : 54
+WipePercentage       : 0
+VolumeType           : OperatingSystem
+CapacityGB           : 165.0613
+KeyProtector         : {Tpm, RecoveryPassword}
+
+100
+54
+53
+53
+53
+53
+53
+52
+52
+52
+52
+52
+52
+51
+51
+51
+51
+51
+50
+50
+50
+50
+50
+49
+49
+49
+49
+49
+49
+48
+48
+48
+48
+48
+47
+47
+47
+47
+47
+47
+46
+46
+46
+46
+46
+45
+45
+45
+45
+45
+44
+44
+44
+44
+44
+44
+43
+43
+43
+43
+43
+42
+42
+42
+42
+42
+41
+41
+41
+41
+41
+41
+40
+40
+40
+40
+40
+39
+39
+39
+39
+39
+38
+38
+38
+38
+38
+38
+38
+38
+38
+38
+38
+37
+37
+37
+37
+37
+37
+37
+37
+37
+36
+36
+36
+36
+36
+36
+36
+35
+35
+35
+35
+35
+35
+34
+34
+34
+34
+34
+33
+33
+33
+33
+33
+32
+32
+32
+32
+32
+32
+31
+31
+31
+31
+31
+30
+30
+30
+30
+30
+29
+29
+29
+29
+29
+28
+28
+28
+28
+28
+28
+28
+28
+27
+27
+27
+27
+27
+27
+27
+27
+27
+27
+26
+26
+26
+26
+26
+26
+26
+25
+25
+25
+25
+25
+25
+25
+24
+24
+24
+24
+24
+24
+24
+24
+23
+23
+23
+23
+23
+23
+22
+22
+22
+22
+22
+21
+21
+21
+21
+21
+20
+20
+20
+20
+20
+20
+19
+19
+19
+19
+19
+19
+18
+18
+18
+18
+18
+18
+17
+17
+17
+17
+17
+17
+16
+16
+16
+16
+16
+16
+15
+15
+15
+15
+15
+14
+14
+14
+14
+14
+14
+13
+13
+13
+13
+13
+13
+13
+13
+12
+12
+12
+12
+12
+12
+12
+11
+11
+11
+11
+11
+11
+11
+10
+10
+10
+10
+10
+10
+10
+10
+9
+9
+9
+9
+9
+9
+9
+9
+8
+8
+8
+8
+8
+8
+8
+8
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+5
+5
+5
+5
+5
+4
+4
+4
+4
+4
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+2
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+removing from AD
+
+AccountExpires         :
+Description            : The Animx
+Enabled                : True
+FullName               : Ooloi Valentine
+PasswordChangeableDate : 10/5/2022 1:59:35 PM
+PasswordExpires        :
+UserMayChangePassword  : False
+PasswordRequired       : False
+PasswordLastSet        : 10/4/2022 1:59:35 PM
+LastLogon              :
+Name                   : Ooloi
+SID                    : S-1-5-21-3339709218-3862982584-1984175871-1516
+PrincipalSource        : Local
+ObjectClass            : User
+
+
+Windows IP Configuration
+
+No operation can be performed on Wi-Fi 3 while it has its media disconnected.
+No operation can be performed on Local Area Connection* 2 while it has its media disconnected.
+No operation can be performed on Local Area Connection* 3 while it has its media disconnected.
+No operation can be performed on Ethernet 9 while it has its media disconnected.
+
+Ethernet adapter Ethernet 4:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::ce9:6931:41cc:afa5%16
+   Default Gateway . . . . . . . . . :
+
+Wireless LAN adapter Wi-Fi 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : sfaf.int
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Ethernet 9:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+WARNING: The changes will take effect after you restart the computer MSEARL-L.
+WARNING: The changes will take effect after you restart the computer MSEARL-L.
+
+Windows IP Configuration
+
+No operation can be performed on Local Area Connection* 2 while it has its media disconnected.
+No operation can be performed on Local Area Connection* 3 while it has its media disconnected.
+No operation can be performed on Wi-Fi 3 while it has its media disconnected.
+No operation can be performed on Ethernet 9 while it has its media disconnected.
+
+Ethernet adapter Ethernet 4:
+
+   Connection-specific DNS Suffix  . : sfaf.int
+   Link-local IPv6 Address . . . . . : fe80::ce9:6931:41cc:afa5%16
+   IPv4 Address. . . . . . . . . . . : 10.32.10.124
+   Subnet Mask . . . . . . . . . . . : 255.255.252.0
+   Default Gateway . . . . . . . . . : 10.32.8.1
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : sfaf.int
+
+Ethernet adapter Ethernet 9:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+Synching MSEARL-L221004-1312
+**********************
+Windows PowerShell transcript end
+End time: 20221004135942
+**********************
