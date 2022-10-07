@@ -1,0 +1,1153 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20221006173941
+Username: 470-ADELABRA-L\scrockett
+RunAs User: 470-ADELABRA-L\scrockett
+Configuration Name: 
+Machine: 470-ADELABRA-L (Microsoft Windows NT 10.0.19042.0)
+Host Application: powershell.exe -ExecutionPolicy Bypass -File C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1
+Process ID: 21912
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Temp\Log\Decom\Decom-221006-1739.txt
+
+
+    Hive: HKEY_LOCAL_MACHINE\Software\Ninja
+
+
+Name                           Property
+----                           --------
+Decommission
+PS>TerminatingError(Get-ItemProperty): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Property Script-Stage does not exist at path HKEY_LOCAL_MACHINE\Software\Ninja\Decommission."
+Script stage unset, creating script stage
+Contenuing with Stage value 0
+Get-CimInstance : Invalid namespace 
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:27 char:25
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], 
+CimException
+    + FullyQualifiedErrorId : HRESULT 0x8004100e,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+Get-CimInstance : Invalid namespace
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:27 char:25
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], CimExc
+   eption
+    + FullyQualifiedErrorId : HRESULT 0x8004100e,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+
+Cannot convert null to type "System.DateTime".
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:27 char:1
++ $warranty = [datetime] (Get-CimInstance -Namespace root/Lenovo -Class ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+Cannot convert null to type "System.DateTime".
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:27 char:1
++ $warranty = [datetime] (Get-CimInstance -Namespace root/Lenovo -Class ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+
+Transcript started, output file is C:\Temp\Lenovo\10062022-1739.log
+Calling API
+Downloading LenovoVantage
+
+type                : file
+id                  : 1027721911808
+file_version        : @{type=file_version; id=1113505210208; sha1=a3d498c63cf05bff1ce86acb1c9291979d46077e}
+sequence_id         : 1
+etag                : 1
+sha1                : a3d498c63cf05bff1ce86acb1c9291979d46077e
+name                : LenovoCommercialVantage-SFAF.zip
+description         :
+size                : 376195306
+path_collection     : @{total_count=4; entries=System.Object[]}
+created_at          : 2022-09-29T16:19:00-07:00
+modified_at         : 2022-09-29T16:19:00-07:00
+trashed_at          :
+purged_at           :
+content_created_at  : 2022-09-20T17:21:00-07:00
+content_modified_at : 2022-09-20T17:21:00-07:00
+created_by          : @{type=user; id=20065812446; name=Gabriell Valentine; login=gvalentine@sfaf.org}
+modified_by         : @{type=user; id=20065812446; name=Gabriell Valentine; login=gvalentine@sfaf.org}
+owned_by            : @{type=user; id=9418247245; name=IT Support; login=itsupport@sfaf.org}
+shared_link         : @{url=https://app.box.com/s/dv93tmnn612qnhxvli1vjp89sk66qogy;
+                      download_url=https://app.box.com/shared/static/dv93tmnn612qnhxvli1vjp89sk66qogy.zip;
+                      vanity_url=; vanity_name=; effective_access=open; effective_permission=can_download;
+                      is_password_enabled=False; unshared_at=; download_count=10; preview_count=1; access=open;
+                      permissions=}
+parent              : @{type=folder; id=173806918296; sequence_id=0; etag=0; name=Lenovo}
+item_status         : active
+
+TOTAL SIZE =
+376195306
+cd : Cannot find path 'C:\Temp\Lenovo\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFAF' because it does not 
+exist.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:102 char:1
++ cd "$tempdir\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFA ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Temp\Lenovo\...ialVantage-SFAF:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path 'C:\Temp\Lenovo\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFAF' because it does not
+exist.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:102 char:1
++ cd "$tempdir\LenovoCommercialVantage-SFAF\LenovoCommercialVantage-SFA ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Temp\Lenovo\...ialVantage-SFAF:String) [Set-Location], ItemNotFoundE
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+Running Bat - Starting
+PS>TerminatingError(Start-Process): "This command cannot be run due to the error: The system cannot find the file specified."
+Start-Process : This command cannot be run due to the error: The system cannot find the file specified.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:105 char:12
++ $install = Start-Process $batfile -Verb RunAs -PassThru
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: The system cannot find the file specified.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:105 char:12
++ $install = Start-Process $batfile -Verb RunAs -PassThru
++            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+>> TerminatingError(Wait-Process): "Cannot validate argument on parameter 'Id'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+Wait-Process : Cannot validate argument on parameter 'Id'. The argument is null or empty. Provide an argument that is 
+not null or empty, and then try the command again.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:106 char:18
++ Wait-Process -id $install.id
++                  ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Wait-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.WaitProcessCommand
+Wait-Process : Cannot validate argument on parameter 'Id'. The argument is null or empty. Provide an argument that is
+not null or empty, and then try the command again.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:106 char:18
++ Wait-Process -id $install.id
++                  ~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Wait-Process], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.WaitProcessCommand
+
+Running Bat - Complete
+Cleaning up
+Install finished. Something Went wrong.
+Transcript stopped, output file is C:\Temp\Lenovo\10062022-1739.log
+Gathering and uploading node metadata
+Forcing web requests to allow TLS v1.2 (Required for requests to Chocolatey.org)
+Getting latest version of the Chocolatey package for download.
+Not using proxy.
+Getting Chocolatey from https://community.chocolatey.org/api/v2/package/chocolatey/1.1.0.
+Downloading https://community.chocolatey.org/api/v2/package/chocolatey/1.1.0 to C:\Users\SCROCK~1\AppData\Local\Temp\chocolatey\chocoInstall\chocolatey.zip
+Not using proxy.
+Extracting C:\Users\SCROCK~1\AppData\Local\Temp\chocolatey\chocoInstall\chocolatey.zip to C:\Users\SCROCK~1\AppData\Local\Temp\chocolatey\chocoInstall
+Installing Chocolatey on the local machine
+Creating ChocolateyInstall as an environment variable (targeting 'Machine') 
+  Setting ChocolateyInstall to 'C:\ProgramData\chocolatey'
+WARNING: It's very likely you will need to close and reopen your shell 
+  before you can use choco.
+Restricting write permissions to Administrators
+We are setting up the Chocolatey package repository.
+The packages themselves go to 'C:\ProgramData\chocolatey\lib'
+  (i.e. C:\ProgramData\chocolatey\lib\yourPackageName).
+A shim file for the command line goes to 'C:\ProgramData\chocolatey\bin'
+  and points to an executable in 'C:\ProgramData\chocolatey\lib\yourPackageName'.
+
+Creating Chocolatey folders if they do not already exist.
+WARNING: You can safely ignore errors related to missing log files when 
+  upgrading from a version of Chocolatey less than 0.9.9. 
+  'Batch file could not be found' is also safe to ignore. 
+  'The system cannot find the file specified' - also safe.
+chocolatey.nupkg file not installed in lib.
+ Attempting to locate it from bootstrapper.
+PATH environment variable does not have C:\ProgramData\chocolatey\bin in it. Adding...
+WARNING: Not setting tab completion: Profile file does not exist at 'C:\Users\scrockett\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'.
+Chocolatey (choco.exe) is now ready.
+You can call choco from anywhere, command line or powershell by typing choco.
+Run choco /? for a list of functions.
+You may need to shut down and restart powershell and/or consoles
+ first prior to using choco.
+Ensuring Chocolatey commands are on the path
+Ensuring chocolatey.nupkg is in the lib folder
+
+FastPackageReference : https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swidtag
+ProviderName         : Bootstrap
+Source               : https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swidtag
+Status               : Installed
+SearchKey            : https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swidtag
+FullPath             :
+PackageFilename      : Microsoft.PackageManagement.NuGetProvider.dll
+FromTrustedSource    : False
+Summary              : NuGet provider for the OneGet meta-package manager
+SwidTags             : {nuget}
+CanonicalId          : bootstrap:nuget/2.8.5.208#https://onegetcdn.azureedge.net/providers/nuget-2.8.5.208.package.swid
+                       tag
+Metadata             : {summary,providerName,providerVersion,summary}
+SwidTagText          : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                       <SoftwareIdentity
+                         name="nuget"
+                         version="2.8.5.208"
+                         versionScheme="multipartnumeric"
+                       xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                         <Meta
+                           summary="NuGet provider for the OneGet meta-package manager" />
+                         <Meta
+                           providerName="nuget"
+                           providerVersion="2.8.5.208"
+                           summary="NuGet provider for the OneGet meta-package manager" />
+                         <Link
+                           href="https://onegetcdn.azureedge.net/providers/Microsoft.PackageManagement.NuGetProvider-2.
+                       8.5.208.dll"
+                           rel="installationmedia"
+                           type="application/octet-stream"
+                           media="(OS:windows)" />
+                       </SoftwareIdentity>
+Dependencies         : {}
+IsCorpus             :
+Name                 : nuget
+Version              : 2.8.5.208
+VersionScheme        : multipartnumeric
+TagVersion           :
+TagId                :
+IsPatch              :
+IsSupplemental       :
+AppliesToMedia       :
+Meta                 : {{summary}, {providerName,providerVersion,summary}}
+Links                : {installationmedia:https://onegetcdn.azureedge.net/providers/Microsoft.PackageManagement.NuGetPr
+                       ovider-2.8.5.208.dll}
+Entities             : {}
+Payload              :
+Evidence             :
+Culture              :
+Attributes           : {name,version,versionScheme}
+
+Import-Module : The specified module 'posh-git' was not loaded because no valid module file was found in any module 
+directory.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:187 char:5
++     Import-Module posh-git
++     ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (posh-git:String) [Import-Module], FileNotFoundException
+    + FullyQualifiedErrorId : Modules_ModuleNotFound,Microsoft.PowerShell.Commands.ImportModuleCommand
+Import-Module : The specified module 'posh-git' was not loaded because no valid module file was found in any module
+directory.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:187 char:5
++     Import-Module posh-git
++     ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (posh-git:String) [Import-Module], FileNotFoundException
+    + FullyQualifiedErrorId : Modules_ModuleNotFound,Microsoft.PowerShell.Commands.ImportModuleCommand
+
+Add-PoshGitToProfile : The term 'Add-PoshGitToProfile' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:188 char:5
++     Add-PoshGitToProfile -AllHosts
++     ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Add-PoshGitToProfile:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Add-PoshGitToProfile : The term 'Add-PoshGitToProfile' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:188 char:5
++     Add-PoshGitToProfile -AllHosts
++     ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Add-PoshGitToProfile:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+PSPath            : Microsoft.PowerShell.Core\FileSystem::C:\temp\Git
+PSParentPath      : Microsoft.PowerShell.Core\FileSystem::C:\temp
+PSChildName       : Git
+PSDrive           : C
+PSProvider        : Microsoft.PowerShell.Core\FileSystem
+PSIsContainer     : True
+Name              : Git
+FullName          : C:\temp\Git
+Parent            : temp
+Exists            : True
+Root              : C:\
+Extension         :
+CreationTime      : 10/6/2022 6:02:47 PM
+CreationTimeUtc   : 10/7/2022 1:02:47 AM
+LastAccessTime    : 10/6/2022 6:02:47 PM
+LastAccessTimeUtc : 10/7/2022 1:02:47 AM
+LastWriteTime     : 10/6/2022 6:02:47 PM
+LastWriteTimeUtc  : 10/7/2022 1:02:47 AM
+Attributes        : Directory
+Mode              : d-----
+BaseName          : Git
+Target            : {}
+LinkType          :
+
+
+Get-CimInstance : Invalid namespace 
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:167 char:33
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], 
+CimException
+    + FullyQualifiedErrorId : HRESULT 0x8004100e,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+Get-CimInstance : Invalid namespace
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:167 char:33
++ ... [datetime] (Get-CimInstance -Namespace root/Lenovo -ClassName Lenovo_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : MetadataError: (root/Lenovo:Lenovo_WarrantyInformation:String) [Get-CimInstance], CimExc
+   eption
+    + FullyQualifiedErrorId : HRESULT 0x8004100e,Microsoft.Management.Infrastructure.CimCmdlets.GetCimInstanceCommand
+
+Cannot convert null to type "System.DateTime".
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:167 char:9
++         $warranty = [datetime] (Get-CimInstance -Namespace root/Lenov ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+Cannot convert null to type "System.DateTime".
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:167 char:9
++         $warranty = [datetime] (Get-CimInstance -Namespace root/Lenov ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [], RuntimeException
+    + FullyQualifiedErrorId : nullToObjectInvalidCast
+
+Exception calling "ParseExact" with "3" argument(s): "String was not recognized as a valid DateTime."
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:168 char:9
++         [datetime]::parseexact($warranty, 'dd/MM/yyyy hh:mm:ss', $nul ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : FormatException
+Exception calling "ParseExact" with "3" argument(s): "String was not recognized as a valid DateTime."
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:168 char:9
++         [datetime]::parseexact($warranty, 'dd/MM/yyyy hh:mm:ss', $nul ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : FormatException
+
+A1974,PC19PG14,470-ADELABRA-L,ThinkPad X390,,Intel64 Family 6 Model 142 Stepping 12,2022-10-06 18:02,:achristianson:adelabra:Administrator:ang:gvalentine:mmaurice:Public:scrockett:Temp:yyosief:
+PS>TerminatingError(New-Item): "The given path's format is not supported."
+New-Item : The given path's format is not supported.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:207 char:28
++ ... -eq $False){New-Item -Path . -Name $ConfigPath -ItemType "file" -Valu ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [New-Item], NotSupportedException
+    + FullyQualifiedErrorId : System.NotSupportedException,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : The given path's format is not supported.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:207 char:28
++ ... -eq $False){New-Item -Path . -Name $ConfigPath -ItemType "file" -Valu ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [New-Item], NotSupportedException
+    + FullyQualifiedErrorId : System.NotSupportedException,Microsoft.PowerShell.Commands.NewItemCommand
+
+get-content : Cannot find path 'C:\Users\scrockett\.gitconfig' because it does not exist.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:208 char:19
++     $ConfigFile = get-content -Path $ConfigPath
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\scrockett\.gitconfig:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+get-content : Cannot find path 'C:\Users\scrockett\.gitconfig' because it does not exist.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:208 char:19
++     $ConfigFile = get-content -Path $ConfigPath
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\scrockett\.gitconfig:String) [Get-Content], ItemNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+
+
+
+
+
+Backing up User Data
+get-package : No package found for '*desktop central*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+get-package : No package found for '*desktop central*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+
+Uninstalling *desktop central*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{e2bef475-57
+                             ce-4db9-a7e7-7fa6df573057}
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *crowdstrike*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {CrowdStrike Windows Sensor}
+CanonicalId                : programs:CrowdStrike Windows Sensor/6.45.15907.0
+Metadata                   : {BundleCachePath,BundleUpgradeCode,BundleAddonCode,BundleDetectCode,BundlePatchCode,Bundle
+                             Version,VersionMajor,VersionMinor,BundleProviderKey,EngineVersion,DisplayIcon,DisplayName,
+                             DisplayVersion,Publisher,ModifyPath,NoElevateOnModify,QuietUninstallString,UninstallString
+                             ,EstimatedSize,Resume,Installed}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="CrowdStrike Windows Sensor"
+                               version="6.45.15907.0"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 BundleCachePath="C:\ProgramData\Package
+                             Cache\{e2bef475-57ce-4db9-a7e7-7fa6df573057}\WindowsSensor.x64.exe"
+                                 BundleUpgradeCode="System.String[]"
+                                 BundleAddonCode="System.String[]"
+                                 BundleDetectCode="System.String[]"
+                                 BundlePatchCode="System.String[]"
+                                 BundleVersion="6.45.15907.0"
+                                 VersionMajor="6"
+                                 VersionMinor="45"
+                                 BundleProviderKey="{e2bef475-57ce-4db9-a7e7-7fa6df573057}"
+                                 EngineVersion="3.14.0.6315"
+                                 DisplayIcon="C:\ProgramData\Package
+                             Cache\{e2bef475-57ce-4db9-a7e7-7fa6df573057}\WindowsSensor.x64.exe,0"
+                                 DisplayName="CrowdStrike Windows Sensor"
+                                 DisplayVersion="6.45.15907.0"
+                                 Publisher="CrowdStrike, Inc."
+                                 ModifyPath="&quot;C:\ProgramData\Package
+                             Cache\{e2bef475-57ce-4db9-a7e7-7fa6df573057}\WindowsSensor.x64.exe&quot; /modify"
+                                 NoElevateOnModify="1"
+                                 QuietUninstallString="&quot;C:\ProgramData\Package
+                             Cache\{e2bef475-57ce-4db9-a7e7-7fa6df573057}\WindowsSensor.x64.exe&quot; /uninstall
+                             /quiet"
+                                 UninstallString="&quot;C:\ProgramData\Package
+                             Cache\{e2bef475-57ce-4db9-a7e7-7fa6df573057}\WindowsSensor.x64.exe&quot;  /uninstall"
+                                 EstimatedSize="95331"
+                                 Resume="3"
+                                 Installed="1" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : CrowdStrike Windows Sensor
+Version                    : 6.45.15907.0
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{BundleCachePath,BundleUpgradeCode,BundleAddonCode,BundleDetectCode,BundlePatchCode,Bundl
+                             eVersion,VersionMajor,VersionMinor,BundleProviderKey,EngineVersion,DisplayIcon,DisplayName
+                             ,DisplayVersion,Publisher,ModifyPath,NoElevateOnModify,QuietUninstallString,UninstallStrin
+                             g,EstimatedSize,Resume,Installed}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *crowdstrike*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8EBAB94E-6B
+                             3C-4EF4-ABD5-A15C39E53F14}
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *umbrella*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Umbrella Roaming Client}
+CanonicalId                : programs:Umbrella Roaming Client/3.0.279.0
+Metadata                   : {DisplayVersion,InstallDate,InstallSource,ModifyPath,NoRepair,Publisher,EstimatedSize,Unin
+                             stallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Language,DisplayName}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Umbrella Roaming Client"
+                               version="3.0.279.0"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 DisplayVersion="3.0.279.0"
+                                 InstallDate="20220503"
+                                 InstallSource="C:\ProgramData\OpenDNS\ERC\Upgrades\"
+                                 ModifyPath="MsiExec.exe /I{8EBAB94E-6B3C-4EF4-ABD5-A15C39E53F14}"
+                                 NoRepair="1"
+                                 Publisher="OpenDNS"
+                                 EstimatedSize="4737"
+                                 UninstallString="MsiExec.exe /I{8EBAB94E-6B3C-4EF4-ABD5-A15C39E53F14}"
+                                 VersionMajor="3"
+                                 VersionMinor="0"
+                                 WindowsInstaller="1"
+                                 Version="50331927"
+                                 Language="1033"
+                                 DisplayName="Umbrella Roaming Client" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Umbrella Roaming Client
+Version                    : 3.0.279.0
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{DisplayVersion,InstallDate,InstallSource,ModifyPath,NoRepair,Publisher,EstimatedSize,Uni
+                             nstallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Language,DisplayName}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *umbrella*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm64\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Standard2019
+                             Volume - en-us
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *office*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Microsoft Office Standard 2019 - en-us}
+CanonicalId                : programs:Microsoft Office Standard 2019 - en-us/16.0.10390.20024
+Metadata                   : {UninstallString,ModifyPath,NoRepair,NoRemove,NoModify,DisplayIcon,DisplayName,DisplayVers
+                             ion,Publisher,InstallLocation,ClickToRunComponent}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Microsoft Office Standard 2019 - en-us"
+                               version="16.0.10390.20024"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 UninstallString="&quot;C:\Program Files\Common Files\Microsoft
+                             Shared\ClickToRun\OfficeClickToRun.exe&quot; scenario=install scenariosubtype=ARP
+                             sourcetype=None productstoremove=Standard2019Volume.16_en-us_x-none culture=en-us
+                             version.16=16.0"
+                                 ModifyPath="&quot;C:\Program Files\Common Files\Microsoft
+                             Shared\ClickToRun\OfficeClickToRun.exe&quot; scenario=repair platform=x64 culture=en-us"
+                                 NoRepair="0"
+                                 NoRemove="0"
+                                 NoModify="0"
+                                 DisplayIcon="C:\Program Files\Common Files\Microsoft
+                             Shared\ClickToRun\OfficeClickToRun.exe"
+                                 DisplayName="Microsoft Office Standard 2019 - en-us"
+                                 DisplayVersion="16.0.10390.20024"
+                                 Publisher="Microsoft Corporation"
+                                 InstallLocation="C:\Program Files\Microsoft Office"
+                                 ClickToRunComponent="1" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Microsoft Office Standard 2019 - en-us
+Version                    : 16.0.10390.20024
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{UninstallString,ModifyPath,NoRepair,NoRemove,NoModify,DisplayIcon,DisplayName,DisplayVer
+                             sion,Publisher,InstallLocation,ClickToRunComponent}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Visual
+                             Studio Tools for the Office system 3.0 Runtime
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *office*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    :
+SwidTags                   : {Visual Studio Tools for the Office system 3.0 Runtime}
+CanonicalId                : programs:Visual Studio Tools for the Office system 3.0 Runtime
+Metadata                   : {DisplayIcon,DisplayName,UninstallString,VersionMinor,VersionMajor,Publisher,InstallLocati
+                             on,UninstallPath,URLUpdateInfo,HelpLink}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Visual Studio Tools for the Office system 3.0 Runtime"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 DisplayIcon="C:\Windows\SysWOW64\msiexec.exe"
+                                 DisplayName="Visual Studio Tools for the Office system 3.0 Runtime"
+                                 UninstallString="C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\9.0\Visual
+                             Studio Tools for the Office system 3.0 Runtime\install.exe"
+                                 VersionMinor="0"
+                                 VersionMajor="2"
+                                 Publisher="Microsoft Corporation"
+                                 InstallLocation="C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\9.0\"
+                                 UninstallPath="C:\Program Files (x86)\Common Files\Microsoft Shared\VSTO\9.0\Visual
+                             Studio Tools for the Office system 3.0 Runtime\install.exe"
+                                 URLUpdateInfo="http://go.microsoft.com/fwlink/?LinkId=96789"
+                                 HelpLink="http://go.microsoft.com/fwlink/?LinkId=96782" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Visual Studio Tools for the Office system 3.0 Runtime
+Version                    :
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{DisplayIcon,DisplayName,UninstallString,VersionMinor,VersionMajor,Publisher,InstallLocat
+                             ion,UninstallPath,URLUpdateInfo,HelpLink}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,versionScheme}
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{8FB53850-24
+                             6A-3507-8ADE-0060093FFEA6}.KB949258
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *office*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    : This service pack is for Visual Studio Tools for the Office system 3.0 Runtime.
+                             If you later install a more recent service pack, this service pack will be uninstalled
+                             automatically.
+                             For more information, visit http://support.microsoft.com/kb/949258.
+SwidTags                   : {Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)}
+CanonicalId                : programs:Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)/1
+Metadata                   : {summary,ReleaseType,Comments,DisplayName,DisplayVersion,HelpLink,NoModify,NoRepair,Parent
+                             DisplayName,ParentKeyName,Publisher,RegistryLocation,UninstallString,URLInfoAbout}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)"
+                               version="1"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 summary="This service pack is for Visual Studio Tools for the Office system 3.0
+                             Runtime.&#xD;&#xA;If you later install a more recent service pack, this service pack will
+                             be uninstalled automatically.&#xD;&#xA;For more information, visit
+                             http://support.microsoft.com/kb/949258."
+                                 ReleaseType="Service Pack"
+                                 Comments="This service pack is for Visual Studio Tools for the Office system 3.0
+                             Runtime.&#xD;&#xA;If you later install a more recent service pack, this service pack will
+                             be uninstalled automatically.&#xD;&#xA;For more information, visit
+                             http://support.microsoft.com/kb/949258."
+                                 DisplayName="Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1
+                             (KB949258)"
+                                 DisplayVersion="1"
+                                 HelpLink="http://support.microsoft.com/kb/949258"
+                                 NoModify="1"
+                                 NoRepair="1"
+                                 ParentDisplayName="Visual Studio Tools for the Office system 3.0 Runtime"
+                                 ParentKeyName="Visual Studio Tools for the Office system 3.0 Runtime"
+                                 Publisher="Microsoft Corporation"
+                                 RegistryLocation="HKEY_LOCAL_MACHINE\Software\Microsoft\Updates\Visual Studio Tools
+                             for the Office system 3.0 Runtime\SP1\KB949258"
+                                 UninstallString="C:\Windows\SysWOW64\msiexec.exe /package
+                             {8FB53850-246A-3507-8ADE-0060093FFEA6} /uninstall {1AF8622B-42B6-472C-A634-487025BD7B38}
+                             /qb+ REBOOTPROMPT=&quot;&quot;"
+                                 URLInfoAbout="http://support.microsoft.com" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Visual Studio Tools for the Office system 3.0 Runtime Service Pack 1 (KB949258)
+Version                    : 1
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{summary,ReleaseType,Comments,DisplayName,DisplayVersion,HelpLink,NoModify,NoRepair,Paren
+                             tDisplayName,ParentKeyName,Publisher,RegistryLocation,UninstallString,URLInfoAbout}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *office*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+
+PropertyOfSoftwareIdentity : PropertyOfSoftwareIdentity
+FastPackageReference       : hklm32\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{4172C08E-FA
+                             2A-49F5-A2DA-66156F14300E}
+ProviderName               : Programs
+Source                     :
+Status                     : Installed
+SearchKey                  : *freshservice*
+FullPath                   :
+PackageFilename            :
+FromTrustedSource          : False
+Summary                    : It is used by Freshservice for discovery
+SwidTags                   : {Freshservice Discovery Agent}
+CanonicalId                : programs:Freshservice Discovery Agent/2.15.0
+Metadata                   : {summary,Comments,Contact,DisplayVersion,InstallDate,InstallSource,ModifyPath,Publisher,Es
+                             timatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Language,Di
+                             splayName}
+SwidTagText                : <?xml version="1.0" encoding="utf-16" standalone="yes"?>
+                             <SoftwareIdentity
+                               name="Freshservice Discovery Agent"
+                               version="2.15.0"
+                               versionScheme="unknown" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd">
+                               <Meta
+                                 summary="It is used by Freshservice for discovery"
+                                 Comments="It is used by Freshservice for discovery"
+                                 Contact="Freshdesk"
+                                 DisplayVersion="2.15.0"
+                                 InstallDate="20220803"
+                                 InstallSource="C:\Program Files (x86)\Freshdesk\Freshservice Discovery
+                             Agent\ScheduledTasks\"
+                                 ModifyPath="MsiExec.exe /I{4172C08E-FA2A-49F5-A2DA-66156F14300E}"
+                                 Publisher="Freshdesk"
+                                 EstimatedSize="4006"
+                                 UninstallString="MsiExec.exe /I{4172C08E-FA2A-49F5-A2DA-66156F14300E}"
+                                 VersionMajor="2"
+                                 VersionMinor="15"
+                                 WindowsInstaller="1"
+                                 Version="34537472"
+                                 Language="1033"
+                                 DisplayName="Freshservice Discovery Agent" />
+                             </SoftwareIdentity>
+Dependencies               : {}
+IsCorpus                   :
+Name                       : Freshservice Discovery Agent
+Version                    : 2.15.0
+VersionScheme              : unknown
+TagVersion                 :
+TagId                      :
+IsPatch                    :
+IsSupplemental             :
+AppliesToMedia             :
+Meta                       : {{summary,Comments,Contact,DisplayVersion,InstallDate,InstallSource,ModifyPath,Publisher,E
+                             stimatedSize,UninstallString,VersionMajor,VersionMinor,WindowsInstaller,Version,Language,D
+                             isplayName}}
+Links                      : {}
+Entities                   : {}
+Payload                    :
+Evidence                   :
+Culture                    :
+Attributes                 : {name,version,versionScheme}
+
+Uninstalling *freshservice*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+get-package : No package found for '*365*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+get-package : No package found for '*365*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+
+Uninstalling *365*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+get-package : No package found for '*phantompdf*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+get-package : No package found for '*phantompdf*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+
+Uninstalling *phantompdf*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+get-package : No package found for '*foxit*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+get-package : No package found for '*foxit*'.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:271 char:9
++         get-package -provider * -IncludeWindowsInstaller -Verbose -Na ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Microsoft.Power...lets.GetPackage:GetPackage) [Get-Package], Exception
+    + FullyQualifiedErrorId : NoMatchFound,Microsoft.PowerShell.PackageManagement.Cmdlets.GetPackage
+
+Uninstalling *foxit*
+PS>TerminatingError(Uninstall-Package): "Cannot bind argument to parameter 'Name' because it is null."
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cmdlets.UninstallPackage
+Uninstall-Package : Cannot bind argument to parameter 'Name' because it is null.
+At C:\ProgramData\NinjaRMMAgent\uscripting\customscript_gen_51.ps1:273 char:33
++         uninstall-package -name $app.Name -force -Verbose
++                                 ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Uninstall-Package], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.PackageManagement.Cm
+   dlets.UninstallPackage
+
+Prepping for Unjoin
+Post removal remoting enabled
+Removing bitlocker
+
+ComputerName         : 470-ADELABRA-L
+MountPoint           : C:
+EncryptionMethod     : XtsAes128
+AutoUnlockEnabled    :
+AutoUnlockKeyStored  : False
+MetadataVersion      : 2
+VolumeStatus         : DecryptionInProgress
+ProtectionStatus     : Off
+LockStatus           : Unlocked
+EncryptionPercentage : 40
+WipePercentage       : 0
+VolumeType           : OperatingSystem
+CapacityGB           : 236.8298
+KeyProtector         : {Tpm, RecoveryPassword}
+
+100
+39
+39
+39
+39
+38
+38
+37
+37
+37
+36
+36
+36
+35
+35
+35
+34
+34
+34
+34
+34
+33
+33
+33
+33
+33
+32
+32
+32
+32
+31
+31
+31
+31
+31
+30
+30
+30
+30
+30
+29
+29
+29
+29
+29
+28
+28
+28
+28
+27
+27
+27
+27
+27
+26
+26
+26
+26
+25
+25
+25
+25
+25
+24
+24
+24
+24
+24
+23
+23
+23
+23
+22
+22
+22
+22
+22
+21
+21
+21
+21
+21
+20
+20
+20
+20
+20
+19
+19
+19
+19
+19
+18
+18
+18
+18
+18
+17
+17
+17
+17
+17
+16
+16
+16
+16
+16
+15
+15
+15
+15
+15
+14
+14
+14
+14
+14
+13
+13
+13
+13
+12
+12
+12
+12
+12
+11
+11
+11
+11
+11
+11
+10
+10
+10
+10
+10
+9
+9
+9
+9
+8
+8
+8
+8
+8
+7
+7
+7
+7
+7
+6
+6
+6
+6
+6
+5
+5
+5
+5
+5
+4
+4
+4
+4
+3
+3
+3
+3
+3
+2
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+removing from AD
+
+AccountExpires         :
+Description            : The Animx
+Enabled                : True
+FullName               : Ooloi Valentine
+PasswordChangeableDate : 10/7/2022 6:10:26 PM
+PasswordExpires        :
+UserMayChangePassword  : False
+PasswordRequired       : False
+PasswordLastSet        : 10/6/2022 6:10:26 PM
+LastLogon              :
+Name                   : Ooloi
+SID                    : S-1-5-21-3952887916-2569940408-2117979908-1252
+PrincipalSource        : Local
+ObjectClass            : User
+
+
+WARNING: The changes will take effect after you restart the computer 470-ADELABRA-L.
+WARNING: The changes will take effect after you restart the computer 470-ADELABRA-L.
+
+Synching 470-ADELABRA-L221006-1739
+**********************
+Windows PowerShell transcript end
+End time: 20221006181039
+**********************
